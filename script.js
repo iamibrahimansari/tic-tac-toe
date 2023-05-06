@@ -30,7 +30,7 @@ const winningPossibilities = [
 const winningArrayForPlayer1 = [];
 const winningArrayForPlayer2 = [];
 
-const checkForWin = (temp1, temp2, p) =>{
+const checkForWin = (temp1, p) =>{
     let res = null;
     if(p === player1){
         winningArrayForPlayer1.push(temp1);
