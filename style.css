@@ -1,0 +1,86 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html{
+    font-size: 62.5%;
+}
+
+body{
+    font-family: sans-serif;
+    border: 1px solid;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    flex-direction: column;
+}
+
+.container{
+    box-shadow: 0 0 1px 1px rgba(0, 0, 0, 0.1);
+    padding: 3rem;
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+    position: relative;
+}
+
+.title{
+    font-size: 3rem;
+    margin-bottom: 3rem;
+}
+
+.tic-tac-toe-board{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    box-shadow: 0 0 1px 1px rgba(0, 0, 0, 0.1);
+    width: 30rem;
+    height: 30rem;
+}
+
+.cell{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 3rem;
+    width: 10rem;
+    height: 10rem;
+    border: 1px solid #aaa;
+}
+
+button{
+    border: none;
+    padding: 1rem 2rem;
+    cursor: pointer;
+    background-color: darkcyan;
+    color: #fff;
+    transition: opacity 0.3s ease;
+    width: fit-content;
+    margin-inline: auto;
+}
+
+button:hover{
+    opacity: 0.8;
+}
+
+.players{
+    display: flex;
+    justify-content: space-between;
+    font-size: 2rem;
+}
+
+.turn{
+    text-align: center;
+    font-size: 1.6rem;
+}
+
+.result{
+    font-size: 3rem;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: green;
+}
